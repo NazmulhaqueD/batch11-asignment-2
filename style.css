@@ -28,11 +28,17 @@
     color: #FFFFFF;
     font-weight: 500;
   }
+  .desc{
+    font-size: 1.2rem;
+    padding:  24px 0;
+  }
   /* header starts here  */
-  /* navbar */
-  .navbar{
+  .header{
     max-width: 1160px;
     margin: 0 auto;
+  }
+  /* navbar */
+  .navbar{
     display: flex;
     justify-content: space-between;
     padding: 1.2rem 0;
@@ -73,7 +79,30 @@
   .admission{
     color: #5D58EF;
   }
+  .mobile-hr{
+    display: none;
+  }
 
+  /* banner starts here  */
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  .banner-title{
+    font-size: 3.4rem;
+    font-weight: bold;
+  }
+  .orange{
+    color: #FEA301;
+  }
+  .sky-blue{
+    color: #01ACFD;
+  }
+  .enroll-btn{
+    background-color: #111111;
+  }
   /* header ends here  */
 
 
@@ -102,5 +131,18 @@
     #hembargar{
         display: block;
         font-size: 2rem;
+    }
+    .mobile-hr{
+      display: block;
+    }
+    /* banner-responsive */
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .banner-img img{
+      width: 100%;
+    }
+    .banner-desc{
+      text-align: center;
     }
   }
