@@ -1,0 +1,106 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+  }
+  
+  /* shared style */
+  .title{
+    font-size: 3.8rem;
+    font-weight: 700;
+  }
+  .common-btn{
+    padding: 1rem 3.8rem;
+    background-color: #FEA301;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  /* header starts here  */
+  /* navbar */
+  .navbar{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+  }
+  #hembargar{
+    display: none;
+  }
+  .nav-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-title .title{
+    font-size: 2rem;
+  }
+  .nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .nav-menu li{
+    list-style: none;
+  }
+  .nav-menu a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .home{
+    color: #FEA301;
+  }
+  .about{
+    color: #01ACFD;
+  }
+  .facilities{
+    color: #05D4DF;
+  }
+  .admission{
+    color: #5D58EF;
+  }
+
+  /* header ends here  */
+
+
+  /* main starts here  */
+  /* main ends here  */
+
+  /* footer starts here  */
+  /* footer ends here  */
+
+
+
+  /* mobile responsive here  */
+  @media screen and (max-width: 576px) {
+    .body{
+        padding: 0 1rem;
+    }
+    .logo{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .navbar .common-btn{
+        display: none;
+    }
+    #hembargar{
+        display: block;
+        font-size: 2rem;
+    }
+  }
