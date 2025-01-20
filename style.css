@@ -16,7 +16,7 @@
   
   /* shared style */
   .title{
-    font-size: 3.8rem;
+    font-size: 2.8rem;
     font-weight: 700;
   }
   .common-btn{
@@ -107,6 +107,50 @@
 
 
   /* main starts here  */
+  /* curriculum section */
+  .curriculum-section{
+    background-image: url(assets/bg.png);
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    margin: 3.8rem 0;
+  }
+  .card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+    max-width: 1160px;
+    margin: 5rem auto;
+  }
+  .card{
+    text-align: center;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.2);
+  }
+  .card img{
+    padding: 2rem 0;
+  }
+  .card-title{
+    font-size: 2.1rem;
+  }
+  .read-more{
+    padding-top: 15px;
+    padding-bottom: 3rem;
+    color: #64C8FF;
+    font-size: 1.3rem;
+  }
+  .first{
+    background-image: linear-gradient(to bottom, #DEF5FF, white);
+  }
+  .second{
+    background-image: linear-gradient(to bottom, #FFF4DC, #FFFFFF);
+  }
+  .last{
+    background-image: linear-gradient(to bottom, #F2E8FF , white);
+  }
+
+
   /* main ends here  */
 
   /* footer starts here  */
@@ -144,5 +188,12 @@
     }
     .banner-desc{
       text-align: center;
+    }
+    /* curriculum section */
+    .card-container{
+      flex-direction: column;
+    }
+    .braket{
+      display: none;
     }
   }
