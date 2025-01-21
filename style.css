@@ -32,6 +32,19 @@
     font-size: 1.2rem;
     padding:  24px 0;
   }
+  .chalange-btn, .box-btn{
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem;
+    border-radius: 3.1rem;
+    background-color: #95B226;
+  }
+  .bg-1{
+    background-color: #3CD8E8;
+  }
+  .bg-2{
+    background-color:  #5D58F0;
+  }
   /* header starts here  */
   .header{
     max-width: 1160px;
@@ -150,6 +163,71 @@
     background-image: linear-gradient(to bottom, #F2E8FF , white);
   }
 
+  /* stories section starts here  */
+  .stories-section{
+    padding: 0 0 3.8rem 0;
+    text-align: center;
+    background-image: url(assets/bg.png);
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(to top, #F8DDAD, #FFFFFF);
+    position: relative;
+  }
+  .background-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .background-img img{
+    width: 100%;
+  }
+  .box-container{
+    max-width: 1160px;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.1rem;
+    text-align: left;
+  }
+  .first-box, .common-box{
+    border-radius: 16px;
+    box-shadow: 10px 10px 28px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .first-box{
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .box-img{
+    position: relative;
+  }
+  .box-img img{
+    width: 100%;
+  }
+  .box-img button{
+    position: absolute;
+    left: 2.4rem;
+    top: calc(100% - 1.5rem);
+  }
+  .box-container>div{
+    background-color: #FFFFFF;
+  }
+  .box-desc{
+    padding: 2rem;
+  }
+  .story-1-title{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  .box-title{
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    font-weight: 800;
+  }
+  .extra-box{
+    display: none;
+  }
+  /* stories section ends here  */
 
   /* main ends here  */
 
@@ -175,6 +253,7 @@
     #hembargar{
         display: block;
         font-size: 2rem;
+        color: black;
     }
     .mobile-hr{
       display: block;
@@ -195,5 +274,15 @@
     }
     .braket{
       display: none;
+    }
+    /* stories section responsive */
+    .first-box{
+      display: none;
+    }
+    .extra-box{
+      display: block;
+    }
+    .box-container{
+      grid-template-columns: repeat(2, 1fr);
     }
   }
