@@ -28,6 +28,11 @@
     color: #FFFFFF;
     font-weight: 500;
   }
+  .common-btn:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+  }
   .desc{
     font-size: 1.2rem;
     padding:  24px 0;
@@ -45,6 +50,8 @@
   .bg-2{
     background-color:  #5D58F0;
   }
+  
+
   /* header starts here  */
   .header{
     max-width: 1160px;
@@ -79,6 +86,9 @@
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
+  }
+  .nav-menu li:hover a{
+    color: pink;
   }
   .home{
     color: #FEA301;
@@ -153,6 +163,12 @@
     color: #64C8FF;
     font-size: 1.3rem;
   }
+  .second .read-more{
+    color: #F0AA00;
+  }
+  .last .read-more{
+    color: #8700FF;
+  }
   .first{
     background-image: linear-gradient(to bottom, #DEF5FF, white);
   }
@@ -206,7 +222,7 @@
   }
   .box-img button{
     position: absolute;
-    left: 2.4rem;
+    left: 2rem;
     top: calc(100% - 1.5rem);
   }
   .box-container>div{
@@ -228,10 +244,57 @@
     display: none;
   }
   /* stories section ends here  */
-
   /* main ends here  */
 
   /* footer starts here  */
+  footer{
+    background-color: #01ACFD;
+  }
+  .footer-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 3.5rem;
+  }
+  .education{
+    width: 50%;
+    color: white;
+  }
+  .edu-title{
+    display: flex;
+    gap: 1rem;
+  }
+  .edu-title h2{
+    font-size: 2.5rem;
+  }
+  .about{
+    width: 25%;
+  }
+  .about-title{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  #footer-menu{
+    flex-direction: column;
+    align-items: start;
+    padding-top: 2rem;
+  }
+  #footer-menu a{
+    color: white;
+  }
+  .media{
+    width: 25%;
+  }
+  .media-container{
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+
+  }
   /* footer ends here  */
 
 
@@ -239,7 +302,7 @@
   /* mobile responsive here  */
   @media screen and (max-width: 576px) {
     .body{
-        padding: 0 1rem;
+        padding: 0 .5rem;
     }
     .logo{
         display: none;
@@ -284,5 +347,13 @@
     }
     .box-container{
       grid-template-columns: repeat(2, 1fr);
+    }
+    /* footer section */
+    .footer-container{
+      flex-direction: column;
+      padding: 8rem 1rem;
+    }
+    .education, .about, .media{
+      width: 100%;
     }
   }
