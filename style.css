@@ -366,4 +366,9 @@
     .education, .about, .media{
       width: 100%;
     }
+    #footer-menu{
+      display: block;
+      display: flex;
+      flex-direction: column;
+    }
   }
