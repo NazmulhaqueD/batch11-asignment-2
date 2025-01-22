@@ -295,6 +295,12 @@
     padding-top: 2rem;
 
   }
+  marquee{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 3px 2px 2px tomato;
+  }
   /* footer ends here  */
 
 
