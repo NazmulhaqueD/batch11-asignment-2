@@ -354,6 +354,10 @@
     .box-container{
       grid-template-columns: repeat(2, 1fr);
     }
+    .box-img button{
+      padding: 8px;
+      top: calc(100% - 20px);
+    }
     /* footer section */
     .footer-container{
       flex-direction: column;
